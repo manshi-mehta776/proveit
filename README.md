@@ -6,7 +6,7 @@
 - 📄 **[Read the full Product Proposal (PROPOSAL.md)](./PROPOSAL.md)**
 - 🧪 **[View the Test Suite (Circuit, State, & Privacy Tests)](./tests)**
 - 🕵️ **[Read our Privacy Model & Claims](#privacy-model)**## Live Demo
-https://prooveit.vercel.app
+https://proveit-weld.vercel.app
 
 ## Demo Video
 🎥 [Watch the 1-Minute Walkthrough Video (Google Drive)](https://drive.google.com/file/d/1yJdPQfqIaX36PHnizjxLoEvQMeaF1GKn/view?usp=sharing)
@@ -14,9 +14,9 @@ https://prooveit.vercel.app
 ## Contract Address
 | Network  | Address                          |
 |----------|----------------------------------|
-| Preprod  | `d6f9af1c8241e874ecef7482db25153e23415d55c7c3f3b5b5d389d9308b79a2` |
+| Preprod  | `ce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb` |
 
-- 🔍 **Contract on Midnight Explorer:** [View Preprod Contract](https://preprod.midnightexplorer.com/contracts/0xd6f9af1c8241e874ecef7482db25153e23415d55c7c3f3b5b5d389d9308b79a2)
+- 🔍 **Contract on Midnight Explorer:** [View Preprod Contract](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb)
 - ⚡ **Confirmed On-Chain Transaction:** [View Extrinsic on 1AM Explorer](https://explorer.1am.xyz/tx/1e6c3a0ef62f1a5ecc53f237f8be9dd3b5b212d3f5e2a85cd3ae3ec366d36215?network=preprod)
 
 ![Preprod Contract Explorer](./screenshots/contract%20on%20chain.png)
