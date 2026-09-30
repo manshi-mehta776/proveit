@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #0b0c10;
+}
+
+@layer base {
+  body {
+    @apply bg-ink text-paper font-body selection:bg-gold/30 selection:text-paper;
+    background-image: radial-gradient(
+      ellipse 1200px 600px at 50% -10%,
+      rgba(201, 162, 75, 0.06),
+      transparent 60%
+    );
+    background-attachment: fixed;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  /* The credential card's surface — a single thin gold hairline at the
+     top, a quiet panel below. No blur stacks, no gradient glow rings. */
+  .plate {
+    @apply bg-ink-panel border border-ink-line rounded-md shadow-plate relative;
+  }
+  .plate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12%;
+    right: 12%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, theme("colors.gold.DEFAULT"), transparent);
+    opacity: 0.6;
+  }
+
+  /* One deliberate moment of motion for a successful verification —
+     a seal settling into place, not a looping glow. */
+  @keyframes seal-settle {
+    0% {
+      opacity: 0;
+      transform: scale(0.92) rotate(-3deg);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg);
+    }
+  }
+  .seal-settle {
+    animation: seal-settle 0.4s cubic-bezier(0.16, 1, 0.3, 1) 1;
+  }
+
+  @keyframes modal-rise {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  .modal-rise {
+    animation: modal-rise 0.22s ease-out 1;
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid theme("colors.gold.DEFAULT");
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
