@@ -82,7 +82,7 @@ export async function callPresentCredentialOnChain(
 
     // Preprod network endpoints
     const indexerHttp =
-      "https://indexer.preprod.midnight.network/api/v4/graphql";
+      "/api/indexer/api/v4/graphql";
     const indexerWs =
       "wss://indexer.preprod.midnight.network/api/v4/graphql/ws";
     const zkConfigPath = `${window.location.origin}/managed/bboard`;
