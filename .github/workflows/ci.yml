@@ -24,12 +24,16 @@ jobs:
           cache: "npm"
 
       - name: Install Compact compiler
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           curl --proto '=https' --tlsv1.2 -LsSf https://github.com/midnightntwrk/compact/releases/latest/download/compact-installer.sh | sh
           echo "$HOME/.local/bin" >> "$GITHUB_PATH"
           echo "$HOME/.compact/bin" >> "$GITHUB_PATH"
 
       - name: Compile and build contract
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           export PATH="$HOME/.local/bin:$HOME/.compact/bin:$PATH"
           compact update 0.31.1 || compact update 0.31.0 || compact update
