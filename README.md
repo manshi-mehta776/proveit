@@ -19,7 +19,6 @@
 | Preprod  | `ce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb` |
 
 - 🔍 **Contract on Midnight Explorer:** [Contract 0xce8ac13a… | Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb)
-- ⚡ **Confirmed On-Chain Transaction:** [View Extrinsic on 1AM Explorer](https://explorer.1am.xyz/tx/1e6c3a0ef62f1a5ecc53f237f8be9dd3b5b212d3f5e2a85cd3ae3ec366d36215?network=preprod)
 
 ![Preprod Contract Explorer](./screenshots/contract%20onchain.png)
 
