@@ -4,22 +4,12 @@
     "app": {
       "root": ".",
       "framework": "vite"
-    },
-    "web": {
-      "root": "preprod-deployment/web",
-      "framework": "nextjs"
     }
   },
   "rewrites": [
     {
       "source": "/api/proof/:path*",
       "destination": "https://proof-server.preprod.midnight.network/:path*"
-    },
-    {
-      "source": "/board/(.*)",
-      "destination": {
-        "service": "web"
-      }
     },
     {
       "source": "/(.*)",
