@@ -5,18 +5,20 @@
 ### 🌟 Quick Links for Reviewers
 - 📄 **[Read the full Product Proposal (PROPOSAL.md)](./PROPOSAL.md)**
 - 🧪 **[View the Test Suite (Circuit, State, & Privacy Tests)](./tests)**
-- 🕵️ **[Read our Privacy Model & Claims](#privacy-model)**## Live Demo
-https://proveit-weld.vercel.app
+- 🕵️ **[Read our Privacy Model & Claims](#privacy-model)**
+
+## Live Demo
+🌐 **[https://proveit-weld.vercel.app](https://proveit-weld.vercel.app)**
 
 ## Demo Video
 🎥 [Watch the 1-Minute Walkthrough Video (Google Drive)](https://drive.google.com/file/d/1yJdPQfqIaX36PHnizjxLoEvQMeaF1GKn/view?usp=sharing)
 
 ## Contract Address
-| Network  | Address                          |
-|----------|----------------------------------|
+| Network  | Address                                                            |
+|----------|--------------------------------------------------------------------|
 | Preprod  | `ce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb` |
 
-- 🔍 **Contract on Midnight Explorer:** [View Preprod Contract](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb)
+- 🔍 **Contract on Midnight Explorer:** [Contract 0xce8ac13a… | Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb)
 - ⚡ **Confirmed On-Chain Transaction:** [View Extrinsic on 1AM Explorer](https://explorer.1am.xyz/tx/1e6c3a0ef62f1a5ecc53f237f8be9dd3b5b212d3f5e2a85cd3ae3ec366d36215?network=preprod)
 
 ![Preprod Contract Explorer](./screenshots/contract%20on%20chain.png)
@@ -59,6 +61,7 @@ An on-chain observer or verifier can see the total number of credentials that ha
 - **Wallet Connection:** 1AM Wallet (with DUST registration and native transaction balancing)
 - **Testing:** Vitest (comprehensive unit, state transition, circuit logic, and privacy test suites)
 - **CI/CD:** GitHub Actions (`.github/workflows/ci.yml`)
+- **Deployment:** Vercel ([proveit-weld.vercel.app](https://proveit-weld.vercel.app))
 
 ## Prerequisites
 - Node.js v22+
@@ -68,8 +71,8 @@ An on-chain observer or verifier can see the total number of credentials that ha
 ## Setup & Run Locally
 ```bash
 # 1. Clone the repository
-git clone https://github.com/lilawti-lila620/PROOVEIT.git
-cd PROOVEIT
+git clone https://github.com/manshi-mehta776/proveit.git
+cd proveit
 
 # 2. Install dependencies
 npm install
@@ -109,10 +112,9 @@ A status badge is located at the top of this README showing live workflow status
 | :--- | :--- |
 | **Product UI**<br>![Product UI](./screenshots/product%20ui.png) | Interactive dApp interface with live 1AM Wallet integration, credential selection, ZK proof generation, and verification status. |
 | **On-Chain Transaction**<br>![Transaction](./screenshots/transaction%20sucess%20verified.png) | Confirmed transaction on Midnight Preprod Explorer with cryptographic proof verification and ledger state update.<br>🔗 [View on 1AM Explorer](https://explorer.1am.xyz/tx/1e6c3a0ef62f1a5ecc53f237f8be9dd3b5b212d3f5e2a85cd3ae3ec366d36215?network=preprod) |
-| **Contract Explorer**<br>![Contract Explorer](./screenshots/contract%20on%20chain.png) | Midnight Explorer contract page for `d6f9af1c82...` showing contract state, actions, and verification history.<br>🔗 [View on Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0xd6f9af1c8241e874ecef7482db25153e23415d55c7c3f3b5b5d389d9308b79a2) |
+| **Contract Explorer**<br>![Contract Explorer](./screenshots/contract%20on%20chain.png) | Midnight Explorer contract page for `ce8ac13a27…` showing contract state, actions, and verification history.<br>🔗 [View on Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb) |
 | **Deployment Success**<br>![Success](./screenshots/sucess.png) | GitHub Actions CI/CD output showing the successful compilation and deployment of the smart contract to the Midnight Preprod Network. |
 | **Test Output (8 Passing)**<br>![Tests Output](./screenshots/test%20output.png) | Vitest test execution output showing 8 passing tests across `tests/counter.test.ts` and `tests/credential.test.ts`. |
 
 ## Product Proposal
 See [PROPOSAL.md](./PROPOSAL.md) for the complete product specification, target user personas, Midnight architectural rationale, data model, and roadmap to Mainnet.
-
