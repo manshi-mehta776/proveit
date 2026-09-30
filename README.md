@@ -21,7 +21,7 @@
 - 🔍 **Contract on Midnight Explorer:** [Contract 0xce8ac13a… | Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb)
 - ⚡ **Confirmed On-Chain Transaction:** [View Extrinsic on 1AM Explorer](https://explorer.1am.xyz/tx/1e6c3a0ef62f1a5ecc53f237f8be9dd3b5b212d3f5e2a85cd3ae3ec366d36215?network=preprod)
 
-![Preprod Contract Explorer](./screenshots/contract%20on%20chain.png)
+![Preprod Contract Explorer](./screenshots/contract%20onchain.png)
 
 ## What This Does
 ProoveIt lets an organization or issuer open a "gate" in front of a restricted resource—such as a developer channel, a grant distribution pool, an exclusive voting round, or an accredited community.
@@ -111,9 +111,7 @@ A status badge is located at the top of this README showing live workflow status
 | Screenshot | Description |
 | :--- | :--- |
 | **Product UI**<br>![Product UI](./screenshots/product%20ui.png) | Interactive dApp interface with live 1AM Wallet integration, credential selection, ZK proof generation, and verification status. |
-| **On-Chain Transaction**<br>![Transaction](./screenshots/transaction%20sucess%20verified.png) | Confirmed transaction on Midnight Preprod Explorer with cryptographic proof verification and ledger state update.<br>🔗 [View on 1AM Explorer](https://explorer.1am.xyz/tx/1e6c3a0ef62f1a5ecc53f237f8be9dd3b5b212d3f5e2a85cd3ae3ec366d36215?network=preprod) |
-| **Contract Explorer**<br>![Contract Explorer](./screenshots/contract%20on%20chain.png) | Midnight Explorer contract page for `ce8ac13a27…` showing contract state, actions, and verification history.<br>🔗 [View on Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb) |
-| **Deployment Success**<br>![Success](./screenshots/sucess.png) | GitHub Actions CI/CD output showing the successful compilation and deployment of the smart contract to the Midnight Preprod Network. |
+| **Contract Explorer**<br>![Contract Explorer](./screenshots/contract%20onchain.png) | Midnight Explorer contract page for `ce8ac13a27…` showing contract state, actions, and verification history.<br>🔗 [View on Midnight Explorer](https://preprod.midnightexplorer.com/contracts/0xce8ac13a27ce7a4f29436e0572967ee537c4c3bde78719e0a9729d00ea1f3efb) |
 | **Test Output (8 Passing)**<br>![Tests Output](./screenshots/test%20output.png) | Vitest test execution output showing 8 passing tests across `tests/counter.test.ts` and `tests/credential.test.ts`. |
 
 ## Product Proposal
