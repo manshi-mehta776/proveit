@@ -1,21 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "services": {
-    "app": {
-      "root": ".",
-      "framework": "vite"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/proof/:path*",
       "destination": "https://proof-server.preprod.midnight.network/:path*"
     },
     {
-      "source": "/(.*)",
-      "destination": {
-        "service": "app"
-      }
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
   ]
 }
