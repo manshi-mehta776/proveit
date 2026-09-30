@@ -12,10 +12,6 @@
       "destination": "https://proof-server.preprod.midnight.network/:path*"
     },
     {
-      "source": "/api/indexer/:path*",
-      "destination": "https://indexer.preprod.midnight.network/:path*"
-    },
-    {
       "source": "/(.*)",
       "destination": {
         "service": "app"
